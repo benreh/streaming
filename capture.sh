@@ -15,6 +15,9 @@ V_BITRATE=600000
 # Watermark
 USE_WATERMARK=1
 
+wget -q "http://eurobot.uni-hd.de/stream/server.php?show=true" -O /tmp/server
+SERVER=$(cat /tmp/server)
+
 
 #================================
 #putting everything together
@@ -29,7 +32,7 @@ else
 	WATERMARK_PARAM=""
 fi
 
-OUTPUT_PARAM="-metadata streamName=myLiveStream tcp://navicular.iwr.uni-heidelberg.de:6666/live/myLiveStream"
+OUTPUT_PARAM="-metadata streamName=myLiveStream tcp://$SERVER:6666/live/myLiveStream"
 FFMPEG="ffmpeg $INPUT_PARAM $WATERMARK_PARAM $CODEC_PARAM $OUTPUT_PARAM "
 
 #================================
