@@ -42,5 +42,9 @@ then
 	echo "Video device $DEV not available"
 	exit 
 fi
+
+#setting parameters to server
+wget -q "http://eurobot.uni-hd.de/stream/resolution.php?set=$RES" -O /dev/null
+
 #~ set -x
 eval $FFMPEG
