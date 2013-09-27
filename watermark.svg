@@ -7,10 +7,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="321.71317"
-   height="57.295742"
+   width="639"
+   height="479"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -24,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="-40.8176"
-     inkscape:cy="-85.559929"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="300.9441"
+     inkscape:cy="285.88528"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -38,7 +39,9 @@
      inkscape:window-height="841"
      inkscape:window-x="0"
      inkscape:window-y="27"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -55,21 +58,29 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(47.252789,-355.59609)">
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot2985"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#8c8c8c;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       transform="matrix(0.70773027,0,0,0.70773027,385.046,103.54815)"><flowRegion
-         id="flowRegion2987"><rect
-           id="rect2989"
-           width="517.14288"
-           height="139.99998"
-           x="-671.42859"
-           y="346.64789"
-           style="fill:#8c8c8c;fill-opacity:1" /></flowRegion><flowPara
-         id="flowPara2991"
-         style="text-align:end;text-anchor:end;fill:#8c8c8c;fill-opacity:1">Eurobot 2014</flowPara><flowPara
-         id="flowPara2993"
-         style="text-align:end;text-anchor:end;fill:#8c8c8c;fill-opacity:1">Publication of the rules</flowPara></flowRoot>  </g>
+     transform="translate(47.252789,66.108168)">
+    <image
+       sodipodi:absref="./img/eurobot.png"
+       xlink:href="./img/eurobot.png"
+       width="67.567574"
+       height="50"
+       id="image3065"
+       x="510.24146"
+       y="349.4234" />
+    <image
+       sodipodi:absref="./img/eurobot_junior.png"
+       xlink:href="./img/eurobot_junior.png"
+       width="49.019608"
+       height="50"
+       id="image3127"
+       x="-32.496307"
+       y="350.7446" />
+    <image
+       y="368.17612"
+       x="158.74948"
+       id="image3048"
+       xlink:href="./img/prehistobot.png"
+       height="33.901554"
+       width="229.70474" />
+  </g>
 </svg>

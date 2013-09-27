@@ -26,7 +26,7 @@ CODEC_PARAM="-f flv -vcodec flv -b:v $V_BITRATE -qmin 1 -qmax 31"
 
 if [ "$USE_WATERMARK" = "1" ];
 then
-	WATERMARK_PARAM="-vf \"movie=watermark.png [watermark]; [in][watermark] overlay=main_w-overlay_w-10:main_h-overlay_h-10 [out]\""
+	WATERMARK_PARAM="-vf \"movie=watermark.png [watermark]; [in][watermark] overlay=main_w-overlay_w:main_h-overlay_h [out]\""
 	inkscape watermark.svg -e watermark.png
 else
 	WATERMARK_PARAM=""
