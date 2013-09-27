@@ -1,0 +1,71 @@
+Prerequisits:
+=============
+
+Software:
+- ffmpeg in a not too old version (tested with 0.11.1)
+- wget
+- inscape (only for watermark)
+
+Hardware:
+- a v4l2 (video for linux 2) compatible camera
+- a pulse audio source
+
+
+How to run it:
+==============
+Just start the script with
+ ./capture.sh
+or
+ bash capture.sh
+
+but NOT sh capture.sh
+(this will fail for some strange reason.
+I did not have the time to investigate that any further)
+
+It should now stream the content to the streaming server.
+
+
+How to view it:
+===============
+open
+  http://www.eurobot.uni-hd.de
+in a webbrowser.
+Android is not yet working and iOS probably will never work due to the lack of flash support.
+
+Configuration:
+==============
+
+There are several parts to configure. For details see the script itself.
+Here are just some remarks. 
+
+First the resolution. You should use a not too high but also not too low res.
+the default (640x480) seems okay and is supported on most cams.
+
+The fps should stay around 25 or lower due to limited bandwidth.
+
+The Video bitrate now defines the quality. You can play with it.
+If you run the script you will see the achieved fps.
+If it's not what you set, then you should lower the quality.
+If the quality gets to bad before getting a stable fps, lower the fps in the settings.
+
+Watermark
+=========
+
+There is an option to include a watermark.
+You can switch it on by setting USE_WATERMARK=1
+The watermark itsself will be created using the software inkscape.
+It is stored in watermark.svg.
+After modifying it, you should adjust the document size to the size of your graphics.
+This can be done as follows:
+* select everything (Ctrl + a)
+* File > Document properties
+* Resize page to content...
+* Resize page to drawing or selection
+
+Converting the svg to png will be done be the capture script automatically
+Right now the wateremark is aligned to the lower right corner,
+but I hope to make it more flexible soon.
+
+
+Have Fun!
+ 
