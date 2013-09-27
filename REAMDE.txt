@@ -38,7 +38,10 @@ Configuration:
 There are several parts to configure. For details see the script itself.
 Here are just some remarks. 
 
-First the resolution. You should use a not too high but also not too low res.
+First you need to select the video device.
+Normally it should be /dev/video0, but if you have more cameras just try other numbers.
+
+Second the resolution. You should use a not too high but also not too low res.
 the default (640x480) seems okay and is supported on most cams.
 
 The fps should stay around 25 or lower due to limited bandwidth.
